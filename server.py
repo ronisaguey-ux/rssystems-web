@@ -30,11 +30,6 @@ class RSSystemsHandler(SimpleHTTPRequestHandler):
 
         # Health endpoint
         if path in ("/health", "/healthz"):
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.send_header("Cache-Control", "no-cache")
-            self.end_headers()
             data = {
                 "status": "healthy",
                 "domain": "rssystemsweb.com",
@@ -47,7 +42,14 @@ class RSSystemsHandler(SimpleHTTPRequestHandler):
                 "lead_engineer": "Roni Saguey",
                 "contact": "buisness@rssystemsweb.com"
             }
-            self.wfile.write(json.dumps(data, indent=2).encode("utf-8"))
+            body = json.dumps(data, indent=2).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Cache-Control", "no-cache")
+            self.end_headers()
+            self.wfile.write(body)
             return
 
         # Fallback root to index.html
