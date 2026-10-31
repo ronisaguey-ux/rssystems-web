@@ -1,0 +1,16 @@
+[Unit]
+Description=RS Systems Production Web Server (rssystemsweb.com)
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/roni/rssystems-web
+ExecStart=/usr/bin/python3 /home/roni/rssystems-web/server.py
+Restart=always
+RestartSec=3
+Environment=PORT=8080
+Environment=HOST=0.0.0.0
+
+[Install]
+WantedBy=multi-user.target
