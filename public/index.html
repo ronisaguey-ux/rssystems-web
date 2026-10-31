@@ -523,6 +523,107 @@
       </div>
     </section>
 
+    <!-- Architecture & Live Telemetry Section (Clean Light-Themed Console) -->
+    <section id="architecture" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-semibold uppercase tracking-widest text-marine">Infrastructure Topology</span>
+          <h2 class="font-serif text-3xl sm:text-5xl text-ink font-normal tracking-tight">
+            Designed for continuous sovereign operation.
+          </h2>
+          <p class="text-base text-ink-muted leading-relaxed">
+            Every layer of RS Systems runs on dedicated Linux hardware, protected behind Cloudflare tunnels and custom policy gateways. There are no shared cloud multi-tenant risks, no undocumented third-party analytics, and zero credential leakage.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start space-x-3.5">
+              <div class="w-6 h-6 rounded-full bg-marine-light flex items-center justify-center text-marine mt-0.5 flex-shrink-0">
+                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm text-ink">Encrypted QUIC Ingress Tunnels</h4>
+                <p class="text-xs text-ink-muted mt-0.5">Direct ingress from Cloudflare edge to local origin ports without exposing public inbound IPs.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3.5">
+              <div class="w-6 h-6 rounded-full bg-marine-light flex items-center justify-center text-marine mt-0.5 flex-shrink-0">
+                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm text-ink">Strict Pre-Push Commit Condom</h4>
+                <p class="text-xs text-ink-muted mt-0.5">Air-gapped verification of Git staging trees prevents accidental token disclosure.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3.5">
+              <div class="w-6 h-6 rounded-full bg-marine-light flex items-center justify-center text-marine mt-0.5 flex-shrink-0">
+                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm text-ink">Persistent SQLite WAL Persistence</h4>
+                <p class="text-xs text-ink-muted mt-0.5">Crash-resilient append-only state ensures agents never lose turn memory or task history.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Telemetry Card (Warm Architectural White/Linen Card) -->
+        <div class="lg:col-span-6">
+          <div class="bg-white rounded-3xl border border-linen-300 p-8 shadow-warm-lg">
+            
+            <div class="flex items-center justify-between pb-5 border-b border-linen-200">
+              <div class="flex items-center space-x-2.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="font-mono text-xs font-semibold text-ink">node: mastercrustserver</span>
+              </div>
+              <span class="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-sage-light text-sage font-medium">
+                ALL SYSTEMS HEALTHY
+              </span>
+            </div>
+
+            <div class="py-6 space-y-4 font-mono text-xs text-ink-soft">
+              <div class="flex justify-between items-center py-1 border-b border-linen-100">
+                <span class="text-ink-muted">Canonical Host</span>
+                <span class="font-medium text-ink">rssytemsweb.com (HTTP/2 200 OK)</span>
+              </div>
+              <div class="flex justify-between items-center py-1 border-b border-linen-100">
+                <span class="text-ink-muted">Cloudflare Tunnel</span>
+                <span class="text-sage font-medium">4 QUIC connections active (Miami edge)</span>
+              </div>
+              <div class="flex justify-between items-center py-1 border-b border-linen-100">
+                <span class="text-ink-muted">Service Unit</span>
+                <span class="font-medium text-ink">rs-systems-web.service [ACTIVE]</span>
+              </div>
+              <div class="flex justify-between items-center py-1 border-b border-linen-100">
+                <span class="text-ink-muted">Supervisor Watchdog</span>
+                <span class="font-medium text-ink">antigravity-poller.service [LISTENING]</span>
+              </div>
+              <div class="flex justify-between items-center py-1 border-b border-linen-100">
+                <span class="text-ink-muted">Policy Gate</span>
+                <span class="font-medium text-ink">commit-condom :8877 [ENFORCING]</span>
+              </div>
+              <div class="flex justify-between items-center py-1">
+                <span class="text-ink-muted">Physical Location</span>
+                <span class="font-medium text-ink">Hollywood, Florida, United States</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-linen-200 flex items-center justify-between text-xs text-ink-muted">
+              <span>Kernel: Linux 6.8 x86_64</span>
+              <button onclick="navigator.clipboard.writeText('buisness@rssystemsweb.com'); alert('Copied: buisness@rssystemsweb.com');" class="text-marine hover:underline font-medium">
+                Copy Direct Contact
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- Verified Certifications & Credentials Section -->
     <section id="certifications" class="py-16 bg-surface/40 border-y border-surface-border">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
