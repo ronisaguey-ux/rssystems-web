@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RS Systems — Autonomous AI Agent Infrastructure & Systems Engineering</title>
-  <meta name="description" content="RS Systems: Architecting the platforms autonomous AI agents and mission-critical backends run inside. Founded and owned by Tomer Saguey. Lead Engineer Roni Saguey." />
+  <title>Tomer Saguey — Founder, RS Systems</title>
+  <meta name="description" content="Personal site of Tomer Saguey — Founder and owner of RS Systems. Building autonomous AI agent platforms and software infrastructure in Hollywood, Florida." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -19,15 +19,12 @@
               100: '#FAF8F4',
               200: '#F4EFE6',
               300: '#EBE4D8',
-              400: '#DDD4C4',
-              500: '#C7B9A3',
             },
             ink: {
               DEFAULT: '#141A1E',
               soft: '#2C353B',
               muted: '#5B6770',
               subtle: '#8C98A2',
-              faint: '#CBD3D9',
             },
             marine: {
               DEFAULT: '#0F5C82',
@@ -37,7 +34,6 @@
             },
             terracotta: {
               DEFAULT: '#B85D38',
-              hover: '#9E4A28',
               light: '#FBF2ED',
             },
             sage: {
@@ -48,164 +44,105 @@
           fontFamily: {
             serif: ['Newsreader', 'Georgia', 'serif'],
             sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace'],
           },
           boxShadow: {
-            'warm-sm': '0 1px 3px rgba(20, 26, 30, 0.04), 0 1px 2px rgba(20, 26, 30, 0.02)',
-            'warm-md': '0 4px 12px rgba(20, 26, 30, 0.05), 0 1px 3px rgba(20, 26, 30, 0.03)',
-            'warm-lg': '0 12px 28px rgba(20, 26, 30, 0.07), 0 2px 6px rgba(20, 26, 30, 0.03)',
-            'warm-xl': '0 20px 40px rgba(20, 26, 30, 0.09), 0 4px 12px rgba(20, 26, 30, 0.04)',
+            'warm-sm': '0 1px 3px rgba(20, 26, 30, 0.04)',
+            'warm-md': '0 4px 12px rgba(20, 26, 30, 0.05)',
+            'warm-lg': '0 12px 28px rgba(20, 26, 30, 0.07)',
           }
         }
       }
     }
   </script>
   <style>
-    ::selection {
-      background-color: #EAF3F8;
-      color: #0F5C82;
-    }
-    html {
-      background-color: #FAF8F4;
-    }
+    ::selection { background-color: #EAF3F8; color: #0F5C82; }
+    html { background-color: #FAF8F4; }
   </style>
 </head>
 <body class="bg-linen-100 text-ink font-sans antialiased min-h-screen flex flex-col selection:bg-marine-light selection:text-marine">
 
-  <!-- Top Announcement Bar (Zola Style) -->
-  <div class="bg-marine-deep text-linen-100 py-2.5 px-4 text-xs tracking-wide">
-    <div class="max-w-7xl mx-auto flex items-center justify-between text-center sm:text-left">
-      <div class="flex items-center space-x-2 mx-auto sm:mx-0">
-        <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-        <span class="font-medium text-linen-200">Autonomous AI Agent Infrastructure & Systems Engineering</span>
-        <span class="hidden md:inline text-linen-400">·</span>
-        <span class="hidden md:inline text-linen-400">Hollywood, Florida</span>
-      </div>
-      <div class="hidden sm:flex items-center space-x-4 text-linen-300 font-mono text-[11px]">
-        <span>NODE: MASTERCRUST</span>
-        <span>•</span>
-        <a href="mailto:buisness@rssystemsweb.com" class="text-white hover:underline">buisness@rssystemsweb.com</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Primary Navigation (Clean, Airy, Warm White) -->
+  <!-- Simple Header -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-linen-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Brand Logo -->
+        <!-- Brand -->
         <a href="#" class="flex items-center space-x-3 group">
-          <div class="w-10 h-10 rounded-xl bg-linen-200 border border-linen-300 flex items-center justify-center text-marine-deep font-serif font-bold text-xl group-hover:bg-marine group-hover:text-white transition-colors duration-200">
-            RS
-          </div>
+          <img src="/assets/tomer_square.jpg" alt="Tomer Saguey" class="w-10 h-10 rounded-full object-cover border border-linen-300 shadow-warm-sm">
           <div>
-            <span class="font-serif font-semibold text-2xl tracking-tight text-ink block leading-none">
-              RS Systems
-            </span>
-            <span class="text-[11px] font-sans font-medium text-ink-muted tracking-wider uppercase block mt-1">
-              Systems Engineering
-            </span>
+            <span class="font-serif font-semibold text-xl text-ink block leading-none">Tomer Saguey</span>
+            <span class="text-xs font-sans text-ink-muted block mt-1">Founder, RS Systems</span>
           </div>
         </a>
 
-        <!-- Desktop Navigation Links -->
-        <nav class="hidden md:flex items-center space-x-9 text-sm font-medium text-ink-soft">
-          <a href="#platforms" class="hover:text-marine transition-colors">Platforms</a>
-          <a href="#architecture" class="hover:text-marine transition-colors">Architecture</a>
+        <!-- Nav -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-ink-soft">
+          <a href="#work" class="hover:text-marine transition-colors">Work</a>
+          <a href="#about" class="hover:text-marine transition-colors">About</a>
           <a href="#credentials" class="hover:text-marine transition-colors">Credentials</a>
-          <a href="#leadership" class="hover:text-marine transition-colors">Leadership</a>
           <a href="#contact" class="hover:text-marine transition-colors">Contact</a>
         </nav>
 
-        <!-- Right CTA Button -->
-        <div class="hidden sm:flex items-center space-x-3">
-          <a href="https://github.com/ronisaguey-ux" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 text-sm font-medium text-ink-soft hover:text-ink transition-colors flex items-center">
-            <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        <!-- CTA -->
+        <div class="flex items-center space-x-3">
+          <a href="https://github.com/ronisaguey-ux" target="_blank" rel="noopener noreferrer" class="hidden sm:flex text-sm text-ink-soft hover:text-ink font-medium">
             GitHub
           </a>
-          <a href="mailto:buisness@rssystemsweb.com" class="px-5 py-2.5 rounded-full bg-marine hover:bg-marine-hover text-white text-sm font-semibold tracking-wide transition-all shadow-warm-sm hover:shadow-warm-md">
-            Engage Engineering
+          <a href="mailto:buisness@rssystemsweb.com" class="px-5 py-2.5 rounded-full bg-marine hover:bg-marine-hover text-white text-sm font-semibold transition-all shadow-warm-sm">
+            Contact Me
           </a>
-        </div>
-
-        <!-- Mobile Menu Toggle Button -->
-        <div class="md:hidden flex items-center">
-          <button id="mobile-toggle" class="p-2 rounded-lg text-ink-muted hover:text-ink hover:bg-linen-200">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-          </button>
         </div>
 
       </div>
-    </div>
-
-    <!-- Mobile Nav -->
-    <div id="mobile-drawer" class="hidden md:hidden border-t border-linen-300 bg-white px-5 py-4 space-y-3 font-medium text-sm">
-      <a href="#platforms" class="block py-1.5 text-ink-soft hover:text-marine">Platforms</a>
-      <a href="#architecture" class="block py-1.5 text-ink-soft hover:text-marine">Architecture</a>
-      <a href="#credentials" class="block py-1.5 text-ink-soft hover:text-marine">Credentials</a>
-      <a href="#leadership" class="block py-1.5 text-ink-soft hover:text-marine">Leadership</a>
-      <a href="#contact" class="block py-1.5 text-ink-soft hover:text-marine">Contact</a>
-      <div class="pt-3 border-t border-linen-200 flex items-center justify-between">
-        <a href="https://github.com/ronisaguey-ux" class="text-xs text-ink-muted">GitHub (42 Repos)</a>
-        <a href="mailto:buisness@rssystemsweb.com" class="px-4 py-1.5 rounded-full bg-marine text-white text-xs font-semibold">Email Us</a>
     </div>
   </header>
 
   <main class="flex-grow">
 
-    <!-- Hero Section (Editorial, Confident, Welcoming) -->
-    <section class="pt-16 pb-20 sm:pt-24 sm:pb-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-4xl mx-auto text-center space-y-7">
+    <!-- Simple, Elegant Hero for Tomer -->
+    <section class="py-16 sm:py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
         
-        <!-- Category Pill Tag -->
-        <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-white border border-linen-300 shadow-warm-sm text-xs font-medium text-ink-soft tracking-wide">
-          <span class="w-2 h-2 rounded-full bg-sage mr-2"></span>
-          Autonomous Agent Infrastructure & Security Mesh
+        <!-- Bio text -->
+        <div class="md:col-span-8 space-y-6 order-2 md:order-1">
+          <div class="inline-flex items-center px-3.5 py-1 rounded-full bg-white border border-linen-300 text-xs font-medium text-ink-soft shadow-warm-sm">
+            <span class="w-2 h-2 rounded-full bg-sage mr-2"></span>
+            Hollywood, Florida · Founder & Builder
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-6xl text-ink font-normal leading-[1.15] tracking-tight">
+            Hi, I’m Tomer. <br>
+            <span class="italic text-marine font-light">I build autonomous systems.</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-ink-muted leading-relaxed max-w-xl font-normal">
+            I’m the founder and owner of <strong class="text-ink font-medium">RS Systems</strong>. I design and operate autonomous AI agent platforms, developer tooling, and robust Linux infrastructure.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-3.5">
+            <a href="mailto:buisness@rssystemsweb.com" class="px-7 py-3 rounded-full bg-marine hover:bg-marine-hover text-white text-sm font-semibold transition-all shadow-warm-sm">
+              Get in Touch
+            </a>
+            <a href="https://github.com/ronisaguey-ux" target="_blank" rel="noopener noreferrer" class="px-7 py-3 rounded-full bg-white hover:bg-linen-50 border border-linen-300 text-ink text-sm font-medium transition-all shadow-warm-sm">
+              View GitHub (42 Repos)
+            </a>
+          </div>
         </div>
 
-        <!-- Giant Serif Headline (Zola Aesthetic) -->
-        <h1 class="font-serif font-normal text-4xl sm:text-6xl lg:text-7xl text-ink leading-[1.1] tracking-tight">
-          Everything your AI agents need to run sovereignly. <em class="italic font-serif font-light text-marine">All in one place.</em>
-        </h1>
-
-        <!-- Editorial Subtitle -->
-        <p class="text-lg sm:text-xl text-ink-muted font-normal max-w-2xl mx-auto leading-relaxed">
-          RS Systems engineers zero-leak credential isolation, context compression engines, multi-agent MCP orchestration, and self-healing Linux daemons designed to operate continuously with mathematical reliability.
-        </p>
-
-        <!-- CTAs -->
-        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3.5">
-          <a href="#platforms" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-marine hover:bg-marine-hover text-white text-base font-semibold tracking-wide transition-all shadow-warm-md hover:shadow-warm-lg">
-            Explore Flagship Systems
-          </a>
-          <a href="https://github.com/ronisaguey-ux" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white hover:bg-linen-50 border border-linen-300 text-ink text-base font-medium tracking-wide transition-all shadow-warm-sm hover:shadow-warm-md">
-            View 42 Open Repositories
-          </a>
-        </div>
-
-        <!-- Trust & Origin Strip -->
-        <div class="pt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-ink-muted">
-          <span class="flex items-center">
-            <svg class="w-4 h-4 mr-1.5 text-sage" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            100% In-House Architecture
-          </span>
-          <span class="flex items-center">
-            <svg class="w-4 h-4 mr-1.5 text-sage" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            Zero Generative AI Slop
-          </span>
-          <span class="flex items-center">
-            <svg class="w-4 h-4 mr-1.5 text-sage" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            Pure Deterministic Code
-          </span>
-          <span class="flex items-center">
-            <svg class="w-4 h-4 mr-1.5 text-sage" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-            Founded by Tomer Saguey
-          </span>
+        <!-- Portrait photo -->
+        <div class="md:col-span-4 order-1 md:order-2 flex justify-center">
+          <div class="relative">
+            <img src="/assets/tomer_square.jpg" alt="Tomer Saguey" class="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl object-cover border-2 border-linen-300 shadow-warm-lg">
+            <div class="absolute -bottom-3 -right-3 bg-white px-3.5 py-1.5 rounded-full border border-linen-300 shadow-warm-sm text-xs font-medium text-ink-soft flex items-center">
+              <span class="w-2 h-2 rounded-full bg-sage mr-1.5"></span>
+              Active
+            </div>
+          </div>
         </div>
 
       </div>
     </section>
+
 
     <section id="platforms" class="py-20 bg-white border-y border-linen-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
