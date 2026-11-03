@@ -1,0 +1,6 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1024" height="1024" rx="160" fill="#1b1c1c"/>
+  <path d="M512 300L300 512H400L512 400L624 512H724L512 300Z" fill="#41e575"/>
+  <path d="M512 450L300 662H400L512 550L624 662H724L512 450Z" fill="#41e575" fill-opacity="0.8"/>
+  <path d="M512 600L300 812H400L512 700L624 812H724L512 600Z" fill="#41e575" fill-opacity="0.6"/>
+</svg>

@@ -145,65 +145,140 @@
       </div>
     </section>
 
-    <!-- Selected Work (Simple & Clean Grid) -->
+    <!-- Selected Work (Flagship Showcase & Grid) -->
     <section id="work" class="py-20 bg-white border-y border-linen-300">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="mb-12">
-          <span class="text-xs font-semibold uppercase tracking-widest text-terracotta">Selected Work</span>
+          <span class="text-xs font-semibold uppercase tracking-widest text-terracotta">Flagship Platforms</span>
           <h2 class="font-serif text-3xl sm:text-4xl text-ink font-normal mt-2 tracking-tight">
-            What I’ve Built
+            Core Production Systems
           </h2>
-          <p class="text-base text-ink-muted mt-2">
-            A few autonomous platforms and tools engineered and operated through RS Systems.
+          <p class="text-base text-ink-muted mt-2 max-w-2xl">
+            Autonomous multi-agent platforms running in production with real user traffic, automated revenue pipelines, and hardened Linux infrastructure.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Featured Big Cards: Helpotron & T2B -->
+        <div class="space-y-8 mb-14">
           
-          <!-- Helpotron -->
-          <div class="bg-linen-50 rounded-2xl border border-linen-300 p-6 sm:p-7 flex flex-col justify-between hover:shadow-warm-md transition-all">
-            <div>
-              <div class="flex items-center space-x-3.5 mb-4">
-                <img src="/assets/helpotron_logo.jpeg" alt="Helpotron" class="w-12 h-12 rounded-xl object-cover border border-linen-300">
+          <!-- Helpotron Spotlight -->
+          <div class="bg-linen-50 rounded-3xl border border-linen-300 p-7 sm:p-9 hover:shadow-warm-lg transition-all relative overflow-hidden group">
+            <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-6">
+              <div class="flex items-start space-x-4 sm:space-x-5">
+                <img src="/assets/helpotron_logo.jpeg" alt="Helpotron" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover border-2 border-linen-300 shadow-warm-sm flex-shrink-0">
                 <div>
-                  <h3 class="font-serif text-xl font-semibold text-ink">Helpotron</h3>
-                  <span class="text-xs text-ink-muted">Academic Study OS</span>
+                  <div class="flex flex-wrap items-center gap-2.5 mb-1.5">
+                    <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-ink">Helpotron</h3>
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
+                      <span class="w-2 h-2 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span>Live Production · Paying Students
+                    </span>
+                  </div>
+                  <span class="text-sm font-medium text-marine block">Autonomous Academic Study Operating System</span>
                 </div>
               </div>
-              <p class="text-sm text-ink-muted leading-relaxed mb-4">
-                Autonomous study platform and workflow engine for students. Orchestrates multi-agent MCP tool triage, SQLite WAL persistence, and automated syntheses.
-              </p>
+
+              <div class="flex items-center gap-3">
+                <a href="https://helpotron.dpdns.org" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-marine hover:bg-marine-hover text-white text-xs sm:text-sm font-semibold transition-all shadow-warm-sm flex items-center gap-1.5">
+                  Live App ↗
+                </a>
+                <a href="https://github.com/ronisaguey-ux/Helpotron" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-white hover:bg-linen-100 border border-linen-300 text-ink text-xs sm:text-sm font-semibold transition-all shadow-warm-sm flex items-center gap-1.5">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  GitHub
+                </a>
+              </div>
             </div>
-            <div class="pt-4 border-t border-linen-200">
-              <a href="https://github.com/ronisaguey-ux/Helpotron" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-marine hover:underline flex items-center">
-                View on GitHub →
-              </a>
+
+            <p class="text-base text-ink-muted leading-relaxed mb-6 max-w-3xl">
+              An all-in-one AI study platform and workflow OS engineered for university students. Features an autonomous 15-category verification swarm, multi-agent MCP tool triage, and SQLite WAL persistence. Supports multimodal coursework dump (audio transcription, slides, notes), Socratic tutoring agents, double-entry token accounting, and real-time task synthesis.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-6 pt-5 border-t border-linen-200">
+              <div class="bg-white p-3.5 rounded-xl border border-linen-200">
+                <span class="text-xs text-ink-muted block">Architecture</span>
+                <span class="text-sm font-semibold text-ink block mt-0.5">Multi-Agent Swarm (15 Cats)</span>
+              </div>
+              <div class="bg-white p-3.5 rounded-xl border border-linen-200">
+                <span class="text-xs text-ink-muted block">State & Storage</span>
+                <span class="text-sm font-semibold text-ink block mt-0.5">SQLite WAL + Token Ledger</span>
+              </div>
+              <div class="bg-white p-3.5 rounded-xl border border-linen-200">
+                <span class="text-xs text-ink-muted block">Stack</span>
+                <span class="text-sm font-semibold text-ink block mt-0.5">FastAPI · React 19 · Tailwind v4</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">React 19</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">FastAPI</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">SQLite WAL</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">Model Context Protocol (MCP)</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">Chrome MV3</span>
             </div>
           </div>
 
-          <!-- T2B -->
-          <div class="bg-linen-50 rounded-2xl border border-linen-300 p-6 sm:p-7 flex flex-col justify-between hover:shadow-warm-md transition-all">
-            <div>
-              <div class="flex items-center space-x-3.5 mb-4">
-                <div class="w-12 h-12 rounded-xl bg-white border border-linen-300 flex items-center justify-center font-serif font-bold text-marine text-lg">
-                  T2B
-                </div>
+          <!-- T2B Spotlight -->
+          <div class="bg-linen-50 rounded-3xl border border-linen-300 p-7 sm:p-9 hover:shadow-warm-lg transition-all relative overflow-hidden group">
+            <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-6">
+              <div class="flex items-start space-x-4 sm:space-x-5">
+                <img src="/assets/t2b_logo.svg" alt="T2B Logo" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover border-2 border-linen-300 shadow-warm-sm flex-shrink-0 bg-[#1b1c1c] p-2">
                 <div>
-                  <h3 class="font-serif text-xl font-semibold text-ink">T2B Qualification Engine</h3>
-                  <span class="text-xs text-ink-muted">Contractor CRM</span>
+                  <div class="flex flex-wrap items-center gap-2.5 mb-1.5">
+                    <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-ink">T2B Qualification Engine</h3>
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-800 border border-blue-200">
+                      <span class="w-2 h-2 rounded-full bg-blue-500 mr-1.5 animate-pulse"></span>Autonomous Revenue Pipeline
+                    </span>
+                  </div>
+                  <span class="text-sm font-medium text-marine block">Autonomous Trade Contractor Qualification & CRM</span>
                 </div>
               </div>
-              <p class="text-sm text-ink-muted leading-relaxed mb-4">
-                Sales engagement and qualification engine for trade contractors. Ingests municipal permit ETL, runs Twilio SMS & Telegram conversations, and books verified jobs.
-              </p>
+
+              <div class="flex items-center gap-3">
+                <a href="https://github.com/ronisaguey-ux/T2B" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-white hover:bg-linen-100 border border-linen-300 text-ink text-xs sm:text-sm font-semibold transition-all shadow-warm-sm flex items-center gap-1.5">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  GitHub
+                </a>
+              </div>
             </div>
-            <div class="pt-4 border-t border-linen-200">
-              <a href="https://github.com/ronisaguey-ux/T2B" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-marine hover:underline flex items-center">
-                View on GitHub →
-              </a>
+
+            <p class="text-base text-ink-muted leading-relaxed mb-6 max-w-3xl">
+              An end-to-end sales qualification and lead engagement platform for commercial contractors (roofing, solar, HVAC). Automatically ingests municipal permit ETL data, executes multi-channel AI conversational loops across Twilio SMS and Telegram with zero human touch, and routes high-intent qualified jobs directly into a paywalled contractor portal with Stripe billing integration.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-6 pt-5 border-t border-linen-200">
+              <div class="bg-white p-3.5 rounded-xl border border-linen-200">
+                <span class="text-xs text-ink-muted block">Channels</span>
+                <span class="text-sm font-semibold text-ink block mt-0.5">Twilio SMS + Telegram Bot API</span>
+              </div>
+              <div class="bg-white p-3.5 rounded-xl border border-linen-200">
+                <span class="text-xs text-ink-muted block">Ingestion Engine</span>
+                <span class="text-sm font-semibold text-ink block mt-0.5">Municipal Permit ETL + Geospatial</span>
+              </div>
+              <div class="bg-white p-3.5 rounded-xl border border-linen-200">
+                <span class="text-xs text-ink-muted block">Monetization</span>
+                <span class="text-sm font-semibold text-ink block mt-0.5">Paywalled Portal · Stripe Credits</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">Python / FastAPI</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">Twilio SMS</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">Telegram Bot API</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">Permit ETL</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">Stripe API</span>
             </div>
           </div>
+
+        </div>
+
+        <div class="mb-8 pt-2">
+          <span class="text-xs font-semibold uppercase tracking-widest text-terracotta">Agent Infrastructure & Tooling</span>
+          <h3 class="font-serif text-2xl font-normal text-ink mt-1 tracking-tight">
+            Security Gates & Context Compaction
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           <!-- commit-condom -->
           <div class="bg-linen-50 rounded-2xl border border-linen-300 p-6 sm:p-7 flex flex-col justify-between hover:shadow-warm-md transition-all">
