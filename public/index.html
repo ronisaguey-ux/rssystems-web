@@ -156,6 +156,60 @@
         <!-- Featured Big Cards: Helpotron & T2B -->
         <div class="space-y-8 mb-14">
           
+          <!-- Felicity Spotlight -->
+          <div class="bg-linen-50 rounded-3xl border border-linen-300 p-7 sm:p-9 hover:shadow-warm-lg transition-all relative overflow-hidden group">
+            <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-6">
+              <div class="flex items-start space-x-4 sm:space-x-5">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white border-2 border-linen-300 shadow-warm-sm flex items-center justify-center flex-shrink-0 text-marine">
+                  <svg class="w-9 h-9 sm:w-11 sm:h-11" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                </div>
+                <div>
+                  <div class="flex flex-wrap items-center gap-2.5 mb-1.5">
+                    <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-ink">Felicity</h3>
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-sage-50 text-ink border border-linen-300">
+                      <span class="w-2 h-2 rounded-full bg-sage mr-1.5"></span>Zero-Dependency Security Gate
+                    </span>
+                  </div>
+                  <span class="text-sm font-medium text-marine block">Autonomous Agent OpSec &amp; Pre-Push Gate Engine</span>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <a href="https://github.com/ronisaguey-ux/felicity" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-white hover:bg-linen-100 border border-linen-300 text-ink text-xs sm:text-sm font-semibold transition-all shadow-warm-sm flex items-center gap-1.5">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+
+            <p class="text-base text-ink-muted leading-relaxed mb-6 max-w-3xl">
+              The security boundary for autonomous agents. A pure standard-library auditing engine that reads a repository the way an attacker would: high-entropy secret detection, Shannon AST vulnerability patterns, interprocedural taint analysis, MCP and agent sandbox validation, IaC and container posture, and SARIF 2.1.0 output for CI. Bound to every push on a machine through a pre-push gate that chains a structural commit gate, so nothing dangerous leaves a laptop — or a fleet of agents — unexamined.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-6 pt-5 border-t border-linen-200">
+              <div class="bg-white p-3.5 rounded-xl border border-linen-200">
+                <span class="text-xs text-ink-muted block">Detection</span>
+                <span class="text-sm font-semibold text-ink block mt-0.5">42 Rules · Secrets · AST · Taint</span>
+              </div>
+              <div class="bg-white p-3.5 rounded-xl border border-linen-200">
+                <span class="text-xs text-ink-muted block">Enforcement</span>
+                <span class="text-sm font-semibold text-ink block mt-0.5">Pre-Push Hook + Server-Side Gate</span>
+              </div>
+              <div class="bg-white p-3.5 rounded-xl border border-linen-200">
+                <span class="text-xs text-ink-muted block">Runtime</span>
+                <span class="text-sm font-semibold text-ink block mt-0.5">Python · Stdlib Only · Air-Gapped</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">Python 3</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">AST Analysis</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">SARIF 2.1.0</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">Git Hooks</span>
+              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-linen-200 text-ink-soft">MCP Auditing</span>
+            </div>
+          </div>
+
           <!-- Helpotron Spotlight -->
           <div class="bg-linen-50 rounded-3xl border border-linen-300 p-7 sm:p-9 hover:shadow-warm-lg transition-all relative overflow-hidden group">
             <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-6">
@@ -270,29 +324,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-          <!-- felicity -->
-          <div class="bg-linen-50 rounded-2xl border border-linen-300 p-6 sm:p-7 flex flex-col justify-between hover:shadow-warm-md transition-all">
-            <div>
-              <div class="flex items-center space-x-3.5 mb-4">
-                <div class="w-12 h-12 rounded-xl bg-white border border-linen-300 flex items-center justify-center text-marine">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                </div>
-                <div>
-                  <h3 class="font-serif text-xl font-semibold text-ink">felicity</h3>
-                  <span class="text-xs text-ink-muted">Consolidated OpSec Engine</span>
-                </div>
-              </div>
-              <p class="text-sm text-ink-muted leading-relaxed mb-4">
-                Sovereign defensive security auditor synthesizing Shannon AST vulnerability patterns, high-entropy secret detection, AI agent/MCP sandbox validation, and air-gapped pre-push git policy gates with SARIF 2.1.0 reporting.
-              </p>
-            </div>
-            <div class="pt-4 border-t border-linen-200">
-              <a href="https://github.com/ronisaguey-ux/felicity" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-marine hover:underline flex items-center">
-                View on GitHub →
-              </a>
-            </div>
-          </div>
 
           <!-- AI-coding-orchestrator -->
           <div class="bg-linen-50 rounded-2xl border border-linen-300 p-6 sm:p-7 flex flex-col justify-between hover:shadow-warm-md transition-all">
