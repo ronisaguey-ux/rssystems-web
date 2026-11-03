@@ -271,11 +271,57 @@
         <div class="mb-8 pt-2">
           <span class="text-xs font-semibold uppercase tracking-widest text-terracotta">Agent Infrastructure & Tooling</span>
           <h3 class="font-serif text-2xl font-normal text-ink mt-1 tracking-tight">
-            Security Gates & Context Compaction
+            Security Gates, Context Compaction & Runtimes
           </h3>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- AI-coding-orchestrator -->
+          <div class="bg-linen-50 rounded-2xl border border-linen-300 p-6 sm:p-7 flex flex-col justify-between hover:shadow-warm-md transition-all">
+            <div>
+              <div class="flex items-center space-x-3.5 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-white border border-linen-300 flex items-center justify-center text-marine">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <h3 class="font-serif text-xl font-semibold text-ink">AI-coding-orchestrator</h3>
+                  <span class="text-xs text-ink-muted">Multi-Lane Fix Executor</span>
+                </div>
+              </div>
+              <p class="text-sm text-ink-muted leading-relaxed mb-4">
+                Autonomous batch fix executor. Parses multi-file audit plans into disjoint batches, drives parallel LLM lanes with automatic failover, applies byte-exact edits, verifies in-process, and escalates stalled steps via a 3-tier solver.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-linen-200">
+              <a href="https://github.com/ronisaguey-ux/AI-coding-orchestrator" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-marine hover:underline flex items-center">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+
+          <!-- webchat-to-api-harness -->
+          <div class="bg-linen-50 rounded-2xl border border-linen-300 p-6 sm:p-7 flex flex-col justify-between hover:shadow-warm-md transition-all">
+            <div>
+              <div class="flex items-center space-x-3.5 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-white border border-linen-300 flex items-center justify-center text-marine">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                </div>
+                <div>
+                  <h3 class="font-serif text-xl font-semibold text-ink">webchat-to-api-harness</h3>
+                  <span class="text-xs text-ink-muted">Agent API Gateway</span>
+                </div>
+              </div>
+              <p class="text-sm text-ink-muted leading-relaxed mb-4">
+                OpenAI- and Anthropic-compatible HTTP API gateway backed by real browser webchat sessions. Enables Aider, LiteLLM, and Claude Code to drive sessions with complete file and shell tool calling.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-linen-200">
+              <a href="https://github.com/ronisaguey-ux/webchat-to-api-harness" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-marine hover:underline flex items-center">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
 
           <!-- commit-condom -->
           <div class="bg-linen-50 rounded-2xl border border-linen-300 p-6 sm:p-7 flex flex-col justify-between hover:shadow-warm-md transition-all">
@@ -318,6 +364,98 @@
             </div>
             <div class="pt-4 border-t border-linen-200">
               <a href="https://github.com/ronisaguey-ux/tool-call-compactor" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-marine hover:underline flex items-center">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+
+          <!-- context-rot-detector -->
+          <div class="bg-linen-50 rounded-2xl border border-linen-300 p-6 sm:p-7 flex flex-col justify-between hover:shadow-warm-md transition-all">
+            <div>
+              <div class="flex items-center space-x-3.5 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-white border border-linen-300 flex items-center justify-center text-marine">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                </div>
+                <div>
+                  <h3 class="font-serif text-xl font-semibold text-ink">context-rot-detector</h3>
+                  <span class="text-xs text-ink-muted">Context Drift Telemetry</span>
+                </div>
+              </div>
+              <p class="text-sm text-ink-muted leading-relaxed mb-4">
+                Behavioral telemetry and compaction-threshold optimizer for 900k-token agent context windows. Computes token-bucket rot scores, instruction amnesia, and compaction recovery knees via DuckDB.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-linen-200">
+              <a href="https://github.com/ronisaguey-ux/context-rot-detector" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-marine hover:underline flex items-center">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+
+          <!-- memory-condom -->
+          <div class="bg-linen-50 rounded-2xl border border-linen-300 p-6 sm:p-7 flex flex-col justify-between hover:shadow-warm-md transition-all">
+            <div>
+              <div class="flex items-center space-x-3.5 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-white border border-linen-300 flex items-center justify-center text-marine">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7c-2 0-3 1-3 3zm0 4h16M9 4v4m6-4v4"/></svg>
+                </div>
+                <div>
+                  <h3 class="font-serif text-xl font-semibold text-ink">memory-condom</h3>
+                  <span class="text-xs text-ink-muted">Prompt-Cache Memory</span>
+                </div>
+              </div>
+              <p class="text-sm text-ink-muted leading-relaxed mb-4">
+                Append-only memory engine for agent instructions. Stores structured JSONL facts to guarantee byte-exact prefix caching across DeepSeek, Claude, and OpenAI without invalidating prompt cache units.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-linen-200">
+              <a href="https://github.com/ronisaguey-ux/memory-condom" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-marine hover:underline flex items-center">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+
+          <!-- Laya-jev-mcp -->
+          <div class="bg-linen-50 rounded-2xl border border-linen-300 p-6 sm:p-7 flex flex-col justify-between hover:shadow-warm-md transition-all">
+            <div>
+              <div class="flex items-center space-x-3.5 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-white border border-linen-300 flex items-center justify-center text-marine">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+                </div>
+                <div>
+                  <h3 class="font-serif text-xl font-semibold text-ink">Laya-jev-mcp</h3>
+                  <span class="text-xs text-ink-muted">Decision Gate MCP</span>
+                </div>
+              </div>
+              <p class="text-sm text-ink-muted leading-relaxed mb-4">
+                Calibrated probability engine for agent decisions: evaluates candidate actions, returns calibrated confidence scores, and enforces act/escalate thresholds to prevent coin-flip guesses from executing.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-linen-200">
+              <a href="https://github.com/ronisaguey-ux/Laya-jev-mcp" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-marine hover:underline flex items-center">
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+
+          <!-- anti-spiral.js -->
+          <div class="bg-linen-50 rounded-2xl border border-linen-300 p-6 sm:p-7 flex flex-col justify-between hover:shadow-warm-md transition-all">
+            <div>
+              <div class="flex items-center space-x-3.5 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-white border border-linen-300 flex items-center justify-center text-marine">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
+                </div>
+                <div>
+                  <h3 class="font-serif text-xl font-semibold text-ink">anti-spiral.js</h3>
+                  <span class="text-xs text-ink-muted">Loop Abort Plugin</span>
+                </div>
+              </div>
+              <p class="text-sm text-ink-muted leading-relaxed mb-4">
+                Streaming reasoning loop detector: intercepts repetitive model generation in real-time, aborts looping turns within hundreds of characters rather than tens of thousands, and preserves normal code and logs.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-linen-200">
+              <a href="https://github.com/ronisaguey-ux/anti-spiral.js" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-marine hover:underline flex items-center">
                 View on GitHub →
               </a>
             </div>
