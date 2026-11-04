@@ -40,7 +40,7 @@ class RSSystemsHandler(SimpleHTTPRequestHandler):
                 "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                 "owner": "Tomer Saguey",
                 "lead_engineer": "Roni Saguey",
-                "contact": "buisness@rssystemsweb.com"
+                "contact": "buisness@rs-systems-web.com"
             }
             body = json.dumps(data, indent=2).encode("utf-8")
             self.send_response(200)
