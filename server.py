@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-RS Systems Production Web Server (rssystemsweb.com)
+RS Systems Production Web Server (rs-systems-web.com)
 Hosted on mastercrustserver.
 Serves the Google Stitch engineered landing page and assets with sub-millisecond response time.
 """
@@ -32,7 +32,7 @@ class RSSystemsHandler(SimpleHTTPRequestHandler):
         if path in ("/health", "/healthz"):
             data = {
                 "status": "healthy",
-                "domain": "rssystemsweb.com",
+                "domain": "rs-systems-web.com",
                 "platform": "RS Systems Autonomous Platform",
                 "host": socket.gethostname(),
                 "node": "mastercrustserver",
@@ -77,7 +77,7 @@ class RSSystemsHandler(SimpleHTTPRequestHandler):
 
 def main():
     print(f"==================================================")
-    print(f"⚡ RS Systems Web Server — rssystemsweb.com")
+    print(f"⚡ RS Systems Web Server — rs-systems-web.com")
     print(f"Host:      {HOST}:{PORT}")
     print(f"Directory: {PUBLIC_DIR}")
     print(f"Server:    {socket.gethostname()}")
